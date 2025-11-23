@@ -1,0 +1,96 @@
+body { background: #f4f4f8; font-family: "Segoe UI"; }
+.app { width: 900px; margin: auto; padding-bottom: 40px; }
+
+.title { text-align: center; margin: 12px 0 20px; }
+
+.start-card input {
+  padding: 10px; width: 280px; margin-right: 12px;
+}
+.primary-btn {
+  background: #007bff; color: white;
+  border: none; border-radius: 6px;
+  padding: 10px 16px; cursor: pointer;
+}
+.primary-btn:hover { background: #0062d2; }
+.gen-btn { margin: 12px 0; }
+
+/* CHAT */
+.chat-window {
+  height: 360px; background: white;
+  border: 1px solid #ccc; border-radius: 8px;
+  overflow-y: auto; padding: 12px;
+  margin-bottom: 14px;
+}
+.bubble {
+  padding: 10px 14px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  max-width: 60%; font-size: 15px;
+}
+.bubble.user {
+  background: #d9e9ff; margin-left: auto;
+  text-align: right;
+}
+.bubble.assistant {
+  background: #d5ffd5; margin-right: auto;
+}
+
+.chat-input { display: flex; gap: 10px; margin-bottom: 20px; }
+.chat-input textarea {
+  width: 100%; height: 70px; padding: 10px;
+  border-radius: 6px; border: 1px solid #999;
+}
+.send-btn { width: 120px; }
+
+/* PLAN */
+.plan-section { margin-top: 25px; }
+.plan-card {
+  background: white; border: 1px solid #ccc;
+  border-radius: 8px; padding: 12px; margin-bottom: 12px;
+}
+.plan-title {
+  font-weight: bold; font-size: 17px;
+  margin-bottom: 6px;
+}
+
+/* DARK MODE */
+.app.dark { background: #111; color: #eee; }
+.app.dark .chat-window { background: #222; border-color: #444; }
+.app.dark .bubble.user { background: #004b92; color: white; }
+.app.dark .bubble.assistant { background: #0b5d0b; color: white; }
+.app.dark .plan-card { background: #1b1b1b; border-color: #555; }
+
+.dark-toggle {
+  float: right; margin: 12px;
+  border: 1px solid #555; background: transparent;
+  padding: 8px; border-radius: 6px;
+  cursor: pointer; color: inherit;
+}
+.dark-toggle:hover { background: #555; }
+.update-btn {
+  margin-top: 10px;
+  background: #ffaa00;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+.update-btn:hover {
+  background: #d99200;
+}
+
+.update-box {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.update-box textarea {
+  height: 90px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #777;
+  resize: none;
+}
